@@ -5,11 +5,11 @@
 # This scripts outputs node health
 # Version V1
 ############################
-echo "print the disk space"
+set -X # debug mode
 df -h
-echo "print the free space"
+
 free -g
-echo "print the number of CPUs"
+
 nproc
 
 
