@@ -6,11 +6,13 @@
 # Version V1
 ############################
 set -x   # debug mode
-set - e  # exit the script when there is an error
+set -e  # exit the script when there is an error
 set -o  pipe fail   #  exit the script when pipe fail issues
 
 df -yy
+
 free -g
+
 nproc
 
 ps -ef | grep /usr/bin | awk -F " " '{print $2}'
