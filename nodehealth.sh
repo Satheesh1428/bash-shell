@@ -9,7 +9,7 @@ set -x   # debug mode
 set -e  # exit the script when there is an error
 set -o pipefail   #  exit the script when pipe fail  issues
 
-df -yy
+df -h
 
 free -g
 
