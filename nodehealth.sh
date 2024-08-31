@@ -7,7 +7,7 @@
 ############################
 set -x   # debug mode
 set -e  # exit the script when there is an error
-set -o  pipe fail   #  exit the script when pipe fail issues
+set -o pipefail   #  exit the script when pipe fail issues
 
 df -yy
 
