@@ -6,10 +6,10 @@
 # Version V1
 ############################
 set -x   # debug mode
-set  - e  # exit the script when there is an error
-set  -o  pipe fail   #  exit the script when pipe fail issues
+set - e  # exit the script when there is an error
+set -o  pipe fail   #  exit the script when pipe fail issues
 
-df -h
+df -yy
 free -g
 nproc
 
