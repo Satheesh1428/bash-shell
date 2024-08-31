@@ -18,3 +18,9 @@ then
    echo "Example: ./aws_resource_list.sh us-east-1 ec2"
    exit 1
 fi
+
+# check AWS CLI installed or not
+if ! command -v aws &> /dev/null; then
+    echo "AWS CLI is not installed. Please install the AWS CLI and try again."
+    exit 1
+fi
