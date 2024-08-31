@@ -24,3 +24,11 @@ if ! command -v aws &> /dev/null; then
     echo "AWS CLI is not installed. Please install the AWS CLI and try again."
     exit 1
 fi
+
+# check AWS CLI is configured or not
+
+if [ ! -d  ~/.aws ] ;
+then
+   echo "AWS CLI is not configured. Please configure the AWS CLI and try again."
+       exit 1
+fi
