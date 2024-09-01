@@ -12,8 +12,8 @@
 
 # ec2 instance list
 
-aws describe-instances
+aws ec2 describe-instances
 
 # IAM user list
 
-aws list-users
+aws  iam list-users
