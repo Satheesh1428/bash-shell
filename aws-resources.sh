@@ -16,7 +16,7 @@ set -x
 
 echo "print ec2 instances list"
 
-aws ec2 describe-instances |jq '.Reservations[].Instances[]."InstanceId'
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
 # IAM user list
 
